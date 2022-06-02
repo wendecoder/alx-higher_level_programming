@@ -1,15 +1,11 @@
 #!/usr/bin/python3
 def infinite_add(nums):
     inputs = len(nums) - 1
-    if inputs == 0:
-        print(0)
-    else:
-        j = 1
-        sum = 0
-        while j <= inputs:
-            sum += int(nums[j])
-            j += 1
-        print("{:d}".format(sum))
+    sum = 0
+    for i in range(1, inputs + 1):
+        sum += int(nums[i])
+
+    print("{:d}".format(sum))
 if __name__ == '__main__':
     import sys
     infinite_add(sys.argv)
