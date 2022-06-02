@@ -10,6 +10,6 @@ def infinite_add(nums):
             sum += int(nums[j])
             j += 1
         print("{:d}".format(sum))
-if __name__ == "__main__":
+if __name__ == '__main__':
     import sys
     infinite_add(sys.argv)
