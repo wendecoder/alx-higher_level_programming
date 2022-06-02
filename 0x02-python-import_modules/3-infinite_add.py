@@ -2,7 +2,7 @@
 def infinite_add(nums):
     inputs = len(nums) - 1
     if inputs == 0:
-        print("{:d}".format(inputs))
+        print(0)
     else:
         j = 1
         sum = 0
