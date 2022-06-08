@@ -7,4 +7,3 @@ def search_replace(my_list, search, replace):
         else:
             replaced_list.append(replace)
     return replaced_list
-
