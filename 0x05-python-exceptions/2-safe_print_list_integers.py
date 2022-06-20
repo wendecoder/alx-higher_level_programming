@@ -8,8 +8,8 @@ def safe_print_list_integers(my_list=[], x=0):
                 print("{:d}".format(my_list[index]), end='')
                 index += 1
                 printedInts += 1
+            else:
+                print()
+                return printedInts
         except (ValueError, TypeError):
             index += 1
-        else:
-            print()
-            return printedInts
