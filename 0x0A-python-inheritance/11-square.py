@@ -1,23 +1,17 @@
 #!/usr/bin/python3
-"""
-more class base
-"""
-
-
+"""module Square"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-"""
-Square class
-"""
-
-
 class Square(Rectangle):
-    """ Square Class """
+    """Square class"""
     def __init__(self, size):
-        """ size init"""
+        """constructor"""
+        self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
-        super().__init__(self.__size, self.__size)
 
     def __str__(self):
-        return ("[Square] " + str(self.__size) + "/" + str(self.__size))
+        """print representation"""
+        string = "[{}] {}/{}".format("Square", self.__size, self.__size)
+        return string
