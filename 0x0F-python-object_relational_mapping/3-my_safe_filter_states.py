@@ -19,7 +19,8 @@ if __name__ == '__main__':
 
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC", (sys.argv[4],))
+    cursor.execute("SELECT * FROM states WHERE name = %s\
+            ORDER BY id ASC", (sys.argv[4],))
 
     states = cursor.fetchall()
 
@@ -28,4 +29,3 @@ if __name__ == '__main__':
 
     cursor.close()
     db.close()
-
