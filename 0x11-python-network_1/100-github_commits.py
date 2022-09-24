@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     url = 'https://api.github.com/repos/{}/{}/commits'.format(owner, reposit)
     request = requests.get(url)
-    res = res.json()
+    res = request.json()
     try:
         for i in range(10):
             print('{}: {}'.format(
