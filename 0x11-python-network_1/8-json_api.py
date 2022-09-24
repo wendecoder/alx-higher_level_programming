@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 sends a POST request to
-http://0.0.0.0:5000/search_user 
+http://0.0.0.0:5000/search_user
 with the letter as a parameter.
 """
 
@@ -17,7 +17,7 @@ if __name__ == '__main__':
         search_letter = {'q': letter}
 
     url = 'http://0.0.0.0:5000/search_user'
-    response = requests.post(url,search_letter)
+    response = requests.post(url, search_letter)
     try:
         response = response.json()
         if response == {}:
